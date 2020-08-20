@@ -1,0 +1,29 @@
+FORM
+
+Name
+Email
+Age
+Current Job  ______
+Highest Level of Education Attained ________
+
+In which program do you want to enroll in? (radio)
+> Select one
+() Full Stack Web
+() Data Science
+() iOS Dev
+() UX Design
+
+Your inquiry:
+
+SUBMIT
+Thank you for submitting your inquiry. We'll get back at you soon!
+Here are your responses:
+your name :
+your email:
+
+
+TODO:
+-download assets (images, icons)
+-styles for landing page elements
+-forms for inquiry page
+-success page
