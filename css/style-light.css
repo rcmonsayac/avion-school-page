@@ -37,7 +37,7 @@ body {
     background-color: #F0F0F0;
     box-sizing: border-box;
     height: 60px;
-    
+    padding: 0.6em;
 }
 
 .nav-links {
@@ -102,7 +102,7 @@ a:hover {
 
 .btn {
     border-radius: 10px;
-    padding: 10px;
+    padding: 3px;
     text-decoration: none;
     border: 2px solid #808080;
     color: #808080;
