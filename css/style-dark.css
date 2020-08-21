@@ -18,8 +18,16 @@ body {
     background-color: #707070
 }
 
-.main-title {
+.textcolor1 {
     color: #ec6341;
+}
+
+.textcolor2 {
+    color:  #8ea9ba;
+}
+
+.section-info {
+    color:  #c2ced6;
 }
 
 .section {
@@ -43,7 +51,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8ea9ba;
+    background-color: #293641;
     box-sizing: border-box;
     height: 60px;
     padding: 0.6em;
@@ -62,7 +70,7 @@ body {
 .a-link {
     text-decoration: none;
     font-weight: bold;
-    color: #303030;
+    color: #F0F0F0;
     padding: 0.2em 0.4em 0.4em;
     margin: 0;
     border: 0;
@@ -80,6 +88,37 @@ body {
     margin: 5px;
 }
 
+.hero {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    max-height: 480px;
+    height: 240px;
+    overflow: hidden;
+}
+
+.hero-text {
+    margin: auto;
+    position: relative;
+    left: 15%;
+    top: -55%;
+    font-size: 1em;
+    color: #E0E0E0;
+    z-index: 10;
+    /* text-align: center; */
+}
+
+.hero-image {
+    max-width: 100%;
+    display: block;
+    max-height:400px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -88,8 +127,16 @@ body {
 }
 
 .flex-item-card {
-    background-color: #F0F0F0;
-    border: 2px solid #F0F0F0;
+    background-color: #0B172A;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    max-width: 28%;
+    border-radius: 10px;
+}
+
+.flex-item-card2 {
+    background-color: #293641;
     padding: 10px;
     margin: 10px;
     text-align: center;
@@ -105,7 +152,7 @@ body {
 }
 
 .subsection {
-    max-width: 50%;
+    /* max-width: 50%; */
 }
 
 .flex-item-text {
@@ -124,8 +171,8 @@ a:hover {
     border-radius: 10px;
     padding: 3px;
     text-decoration: none;
-    border: 2px solid #808080;
-    color: #808080;
+    border: 2px solid #F0F0F0;
+    color: #F0F0F0;
     width: 75px;
     text-align: center;
 }

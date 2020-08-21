@@ -27,3 +27,4 @@ TODO:
 -styles for landing page elements
 -forms for inquiry page
 -success page
+-(extra)light theme
