@@ -1,23 +1,38 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <h1>Thank you for your responses!</h1>
-        <ul id="responses">
 
-        </ul>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style-dark.css" rel="stylesheet">
+</head>
+
+<body class="form-body">
+
+    <div class="navbar">
+        <img class="logo" src="images/avion-school-logo.png" alt="logo">
+    </div>
+    <div class="form-title">
+        <h1>Thank you for submitting your inquiry!</h1>
+        <span class="clue">We'll get back at you soon.</span>
+    </div>
+    <div class="response-container">
+        <div>
+            <label class="form-label">Here are your responses:</label>
+            <ul id="responses">
+    
+            </ul>
+        </div>
+
+    </div>
         <script>
             var tokens = window.location.href.split('?');
             var pairs = tokens[1].split('&');
             for (var i=0; i<pairs.length; i++) {
                 let tempLi = document.createElement('li');
                 let tok = pairs[i].split('=');
-                tempLi.innerHTML = /*tok[0] + ': ' + */tok[1]
+                tok[1] = tok[1].split('+').join(' ');
+                tempLi.innerHTML = /*tok[0] + ': ' + */decodeURIComponent(tok[1]);
                 
                 var list = document.querySelector('#responses');
                 list.appendChild(tempLi);
