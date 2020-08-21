@@ -177,6 +177,10 @@ a:hover {
     text-align: center;
 }
 
+.btn:hover {
+    border: 2px solid #A0A0A0;
+}
+
 .card-item {
     list-style-type: none;
     background-color: #0B172A;
