@@ -90,6 +90,13 @@ body {
     color: #808080;
 }
 
+.nav-btn:hover {
+    color: #BC4123;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+}
+
 .a-logo {
     display: block;
     width: 50%;
@@ -229,7 +236,8 @@ body {
 /* process */
 
 .process-section,
-.course-section {
+.course-section,
+.contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,15 +245,42 @@ body {
 }
 
 .process-section h1,
-.course-section h1 {
-    color: #BC4123;
-    margin-bottom: 30px;
+.course-section h1,
+.contact-section h1 {
+    color: #ec6341;
+    margin-bottom: 10px;
+}
+
+.process-section p,
+.contact-section p,
+.course-section p {
+    margin-bottom: 40px;
 }
 
 .process-items-container,
-.course-items-container {
+.course-items-container,
+.contact-items-container {
     display: flex;
     justify-content: center;
+}
+
+.footer-btn {
+    font-weight: bold;
+    height: 40px;
+    background-color: #BC4123;
+    font-family: inherit;
+    color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    width: 20%;
+    border: none;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.footer-btn:hover {
+    color: #BC4123;
+    background-color: #ffffff;
 }
 
 .flex-container {
@@ -260,7 +295,7 @@ body {
     padding: 10px;
     margin: 10px;
     text-align: center;
-    max-width: 28%;
+    width: 30%;
     border-radius: 10px;
     padding-bottom: 1.5em;
 }
@@ -274,7 +309,7 @@ body {
     padding: 10px;
     margin: 10px;
     text-align: center;
-    max-width: 28%;
+    width: 30%;
     border-radius: 10px;
 }
 
@@ -472,5 +507,22 @@ select:invalid {
     }
     .quote-container {
         width: 70%;
+    }
+    .process-items-container,
+    .course-items-container,
+    .contact-items-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%
+    }
+    .process-items-container .flex-item-card {
+        width: 70%;
+    }
+    .contact-items-container .flex-item-card {
+        width: 40%
+    }
+    .contact-section p {
+        width: 50%;
+        text-align: center;
     }
 }
