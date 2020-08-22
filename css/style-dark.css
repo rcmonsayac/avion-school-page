@@ -100,10 +100,15 @@ body {
     max-height: 30px;
 }
 
+.bars-icon {
+    display: none;
+    text-decoration: none;
+}
+
 
 /* hero */
 
-.hero {
+.hero-section {
     height: 100vh;
     max-width: 100%;
     background: url('../images/bootcamp-photo.jpg') no-repeat center fixed;
@@ -172,6 +177,76 @@ body {
     object-fit: cover;
     
 } */
+
+
+/* about section */
+
+.about-section {
+    display: flex;
+}
+
+.about-header,
+.about-details {
+    width: 50%;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-header h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #BC4123;
+}
+
+.about-details ul {
+    width: 80%;
+}
+
+
+/* quote */
+
+.quote-section {
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-container {
+    width: 50%;
+    text-align: center;
+}
+
+.quote-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* process */
+
+.process-section,
+.course-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.process-section h1,
+.course-section h1 {
+    color: #BC4123;
+    margin-bottom: 30px;
+}
+
+.process-items-container,
+.course-items-container {
+    display: flex;
+    justify-content: center;
+}
 
 .flex-container {
     display: flex;
@@ -242,6 +317,7 @@ a:hover {
 }
 
 .card-item {
+    width: 100%;
     list-style-type: none;
     background-color: #0B172A;
     padding: 1em;
@@ -368,4 +444,33 @@ select:invalid {
 #responses li {
     list-style-type: circle;
     margin-left: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .navbar {
+        padding: 10px 10px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .bars-icon {
+        display: block;
+        font-size: 30px;
+        color: #BC4123;
+    }
+    .about-section {
+        flex-direction: column;
+        padding: 70px 70px;
+    }
+    .about-header,
+    .about-details {
+        text-align: center;
+        width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+    }
+    .quote-container {
+        width: 70%;
+    }
 }
