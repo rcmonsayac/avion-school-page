@@ -1,22 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
 
 /* #BC4123
 #0B172A
 #463940 */
 
 html {
-    font-family: "Arial Narrow", tahoma, verdana, arial, sans-serif;
+    font-family: Roboto, "Arial Narrow", tahoma, verdana, arial, sans-serif;
     color: #E0E0E0;
+    scroll-behavior: smooth;
 }
 
 body {
     padding: 0;
+    padding-top: 60px;
     margin: 0;
     background-color: #707070;
-    line-height: 1.7em;
+    /* line-height: 1.7em; */
 }
 
 .textcolor1 {
@@ -24,11 +29,11 @@ body {
 }
 
 .textcolor2 {
-    color:  #8ea9ba;
+    color: #8ea9ba;
 }
 
 .section-info {
-    color:  #c2ced6;
+    color: #c2ced6;
 }
 
 .section {
@@ -56,7 +61,10 @@ body {
     background-color: #293641;
     box-sizing: border-box;
     height: 60px;
-    padding: 0.6em;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav-links {
@@ -74,44 +82,100 @@ body {
     font-weight: bold;
     color: #F0F0F0;
     padding: 0.2em 0.4em 0.4em;
-    margin: 0;
+    margin: 0 5px;
     border: 0;
 }
 
 .a-link:hover {
-     color: #808080;
+    color: #808080;
+}
+
+.nav-btn:hover {
+    color: #BC4123;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.a-logo {
+    display: block;
+    width: 50%;
+    height: 100%;
 }
 
 .logo {
-    position: relative;
-    left: 2%;
-    max-width: 60%;
-    max-height: 60%;
-    margin: 5px;
+    max-height: 30px;
 }
 
-.hero {
-    padding: 0;
-    margin: 0;
+.bars-icon {
+    display: none;
+    text-decoration: none;
+}
+
+
+/* hero */
+
+.hero-section {
+    height: 100vh;
     max-width: 100%;
-    width: 100%;
-    height: 100;
-    max-height: 480px;
-    height: 20em;
-    overflow: hidden;
+    background: url('../images/bootcamp-photo.jpg') no-repeat center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-text {
-    margin: auto;
+    margin: 20px;
+    width: 600px;
+    text-align: center;
+    /* margin: auto;
     position: relative;
     top: -75%;
     font-size: 1.1em;
     color: #E0E0E0;
     z-index: 10;
-    padding: 0 5.5em 0;
+    padding: 0 5.5em 0; */
 }
 
-.hero-image {
+.hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text h3 {
+    margin-bottom: 20px;
+}
+
+.hero-text h4 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    font-weight: bold;
+    height: 40px;
+    background-color: #BC4123;
+    font-family: inherit;
+    color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    width: 30%;
+    border: none;
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    color: #BC4123;
+    background-color: #ffffff;
+}
+
+.hero-btn:visited {
+    text-decoration: none;
+}
+
+
+/* .hero-image {
     max-width: 100%;
     display: block;
     max-height:400px;
@@ -119,6 +183,104 @@ body {
     height: 100%;
     object-fit: cover;
     
+} */
+
+
+/* about section */
+
+.about-section {
+    display: flex;
+}
+
+.about-header,
+.about-details {
+    width: 50%;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-header h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #BC4123;
+}
+
+.about-details ul {
+    width: 80%;
+}
+
+
+/* quote */
+
+.quote-section {
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-container {
+    width: 50%;
+    text-align: center;
+}
+
+.quote-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* process */
+
+.process-section,
+.course-section,
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.process-section h1,
+.course-section h1,
+.contact-section h1 {
+    color: #ec6341;
+    margin-bottom: 10px;
+}
+
+.process-section p,
+.contact-section p,
+.course-section p {
+    margin-bottom: 40px;
+}
+
+.process-items-container,
+.course-items-container,
+.contact-items-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-btn {
+    font-weight: bold;
+    height: 40px;
+    background-color: #BC4123;
+    font-family: inherit;
+    color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    width: 20%;
+    border: none;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.footer-btn:hover {
+    color: #BC4123;
+    background-color: #ffffff;
 }
 
 .flex-container {
@@ -133,12 +295,12 @@ body {
     padding: 10px;
     margin: 10px;
     text-align: center;
-    max-width: 28%;
+    width: 30%;
     border-radius: 10px;
     padding-bottom: 1.5em;
 }
 
-.flex-item-card > * {
+.flex-item-card>* {
     padding: 20px;
 }
 
@@ -147,12 +309,12 @@ body {
     padding: 10px;
     margin: 10px;
     text-align: center;
-    max-width: 28%;
+    width: 30%;
     border-radius: 10px;
 }
 
-.flex-item-card2 > * {
-    padding: 20px;   
+.flex-item-card2>* {
+    padding: 20px;
 }
 
 .flex-section {
@@ -175,25 +337,192 @@ a:hover {
     color: #A0A0A0;
 }
 
-.btn {
-    border-radius: 10px;
+.nav-btn {
+    border-radius: 5px;
     padding: .6em;
     text-decoration: none;
-    border: 2px solid #F0F0F0;
-    color: #F0F0F0;
+    border: 2px solid #BC4123;
+    color: #BC4123;
     width: 75px;
     text-align: center;
 }
 
-.btn:hover {
+.nav-btn:hover {
     border: 2px solid #A0A0A0;
 }
 
 .card-item {
+    width: 100%;
     list-style-type: none;
     background-color: #0B172A;
     padding: 1em;
     margin: 0.5em;
     border-radius: 10px;
     text-align: left;
+}
+
+
+/* FORMS CSS*/
+
+.form-body {
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background: url('../images/bootcamp-photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px auto;
+    background: #293641;
+    max-width: 700px;
+    border-radius: 10px;
+    opacity: .9;
+}
+
+.form-group {
+    padding: 5px;
+    margin: 5px;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-input {
+    margin: 5px;
+}
+
+.form-textbox {
+    display: block;
+    width: 99%;
+    padding: 3px 7px;
+    border-radius: 5px;
+    border: 1px;
+    font-size: inherit;
+    color: rgba(0, 0, 0);
+    height: 35px;
+    outline: none;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-textbox:focus,
+.form-textarea:focus,
+.form-submit-button:focus {
+    box-shadow: 0 0 0 2.5px rgb(81, 81, 216);
+}
+
+.form-submit-button:hover {
+    color: #BC4123;
+    background-color: #ffffff;
+}
+
+.select-option {
+    color: rgba(0, 0, 0);
+}
+
+select:invalid {
+    color: rgba(142, 142, 142);
+}
+
+.form-clue {
+    font-size: smaller;
+    font-style: italic;
+}
+
+.form-textarea {
+    display: block;
+    width: 99%;
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-size: inherit;
+    color: rgba(0, 0, 0);
+    resize: vertical;
+    min-height: 120px;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.form-submit-button {
+    background-color: #BC4123;
+    width: 100%;
+    height: 40px;
+    padding: 3px 7px;
+    border: 1px;
+    border-radius: 5px;
+    font-size: inherit;
+    color: inherit;
+    outline: none;
+}
+
+.form-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.response-container {
+    opacity: .9;
+    padding: 20px;
+    margin: 20px auto;
+    background: #293641;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+#responses li {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .navbar {
+        padding: 10px 10px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .bars-icon {
+        display: block;
+        font-size: 30px;
+        color: #BC4123;
+    }
+    .about-section {
+        flex-direction: column;
+        padding: 70px 70px;
+    }
+    .about-header,
+    .about-details {
+        text-align: center;
+        width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+    }
+    .quote-container {
+        width: 70%;
+    }
+    .process-items-container,
+    .course-items-container,
+    .contact-items-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%
+    }
+    .process-items-container .flex-item-card {
+        width: 70%;
+    }
+    .contact-items-container .flex-item-card {
+        width: 40%
+    }
+    .contact-section p {
+        width: 50%;
+        text-align: center;
+    }
 }
