@@ -32,7 +32,7 @@
             let tempLi = document.createElement('li');
             let tok = pairs[i].split('=');
             tok[1] = tok[1].split('+').join(' ');
-            tempLi.innerHTML = /*tok[0] + ': ' + */ decodeURIComponent(tok[1]);
+            tempLi.innerHTML = tok[0] + ': ' +  decodeURIComponent(tok[1]);
 
             var list = document.querySelector('#responses');
             list.appendChild(tempLi);
