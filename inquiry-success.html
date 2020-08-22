@@ -10,7 +10,7 @@
 <body class="form-body">
 
     <div class="navbar">
-        <img class="logo" src="images/avion-school-logo.png" alt="logo">
+        <a class="a-logo" href="index.html"><img class="logo" src="images/avion-school-logo.png" alt="logo"></a>
     </div>
     <div class="form-title">
         <h1>Thank you for submitting your inquiry!</h1>
@@ -20,23 +20,24 @@
         <div>
             <label class="form-label">Here are your responses:</label>
             <ul id="responses">
-    
+
             </ul>
         </div>
 
     </div>
-        <script>
-            var tokens = window.location.href.split('?');
-            var pairs = tokens[1].split('&');
-            for (var i=0; i<pairs.length; i++) {
-                let tempLi = document.createElement('li');
-                let tok = pairs[i].split('=');
-                tok[1] = tok[1].split('+').join(' ');
-                tempLi.innerHTML = /*tok[0] + ': ' + */decodeURIComponent(tok[1]);
-                
-                var list = document.querySelector('#responses');
-                list.appendChild(tempLi);
-            }
-        </script>
-    </body>
+    <script>
+        var tokens = window.location.href.split('?');
+        var pairs = tokens[1].split('&');
+        for (var i = 0; i < pairs.length; i++) {
+            let tempLi = document.createElement('li');
+            let tok = pairs[i].split('=');
+            tok[1] = tok[1].split('+').join(' ');
+            tempLi.innerHTML = /*tok[0] + ': ' + */ decodeURIComponent(tok[1]);
+
+            var list = document.querySelector('#responses');
+            list.appendChild(tempLi);
+        }
+    </script>
+</body>
+
 </html>
